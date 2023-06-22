@@ -17,19 +17,18 @@ function InternshipItem({internship}) {
     }
 
     return (
-        <li>
-            <h2>{internship.title}</h2>
-            <div className={classes.p_one}>
-                <p>
-                    {internship.description}
-                </p>
+        <tbody>
+        <tr key={internship.id}>
+            <td>{internship.title}</td>
+            <td>{internship.description}</td>
+            <td>
                 <button
                     className={classes.titl_btn}
                     onClick={addInternship}>Добавить в кабинет
                 </button>
-            </div>
-
-        </li>
+            </td>
+        </tr>
+        </tbody>
     )
 }
 

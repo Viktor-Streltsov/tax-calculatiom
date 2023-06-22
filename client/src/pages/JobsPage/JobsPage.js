@@ -16,22 +16,28 @@ function JobsPage() {
     return (
         <div className={classes.container_content}>
             <section className={classes.container_one}>
-                <ul>
-                    {
-                        jobs.map(job =>
-                            <li>
-                                <h1 className={classes.title}>{job.title}</h1>
-                                <p>{job.description}</p>
-                                <h3>Требования:</h3>
-                                <p>{job.Requirement}</p>
-                                <h3>Обязанности:</h3>
-                                <p>{job.responsibility}</p>
-                                <h3>Мы предлагаем:</h3>
-                                <p>{job.offer}</p>
-                            </li>
-                        )
-                    }
-                </ul>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Описание</th>
+                        <th>Требования</th>
+                        <th>Обязанности</th>
+                        <th>Мы предлагаем:</th>
+                    </tr>
+                    </thead>
+                    {jobs.map(item => (
+                    <tbody>
+                        <tr key={item.id}>
+                            <td>{item.title}</td>
+                            <td>{item.description}</td>
+                            <td>{item.Requirement}</td>
+                            <td>{item.responsibility}</td>
+                            <td>{item.offer}</td>
+                        </tr>
+                    </tbody>
+                    ))}
+                </table>
             </section>
         </div>
     )

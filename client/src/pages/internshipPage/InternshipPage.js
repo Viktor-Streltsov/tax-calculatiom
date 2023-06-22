@@ -8,6 +8,7 @@ function InternshipPage() {
     const dispatch = useDispatch()
 
     const {internships} = useSelector(state => state.internshipReducer)
+    console.log(internships)
 
     useEffect(() => {
         dispatch(getInternshipsApi())
@@ -19,12 +20,18 @@ function InternshipPage() {
                 <div className={classes.head_internships}>
                     <h1>Стажировки</h1>
                 </div>
-                <ul>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Описание</th>
+                        <th>добавить</th>
+                    </tr>
+                    </thead>
                     {
                         internships.map(internship => <InternshipItem key={internship.id} internship={internship}/>)
                     }
-                </ul>
-
+                </table>
             </section>
         </div>
     )

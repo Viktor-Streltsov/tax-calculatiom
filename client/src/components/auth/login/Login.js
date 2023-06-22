@@ -31,14 +31,14 @@ function Login() {
                 onSubmit={submitLoginHandler}
             >
                 <input
-                    type="text"
+                    type="email"
                     name="email"
                     placeholder="Email"
                     value={email}
                     onChange={e => setEmail(e.target.value)}
                 />
                 <input
-                    type="text"
+                    type="password"
                     name="password"
                     placeholder="Пароль"
                     value={password}

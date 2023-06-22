@@ -13,6 +13,7 @@
     padding: 3rem;
     background: #fff;
     border: 1px solid #000000;
+    border-radius: 20px;
 }
 
 .content_reg input {
@@ -20,10 +21,11 @@
 }
 
 .btn {
-    color: #000;
+    color: #ffffff;
     text-decoration: none;
-    background: linear-gradient(90deg, #FA709A 0%, #FEE140 100%);
+    background: linear-gradient(90deg, #181a7a 0%, #a4a7ce 100%);
     padding: 1rem 4.5rem;
+
 }
 
 .btn_title {

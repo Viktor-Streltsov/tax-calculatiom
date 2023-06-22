@@ -20,10 +20,9 @@ function Stajirovka() {
                 </div>
                 <div className={classes.block_list}>
                     <ul className={classes.block_list_one}>
-                        <li>быстра отправка данных</li>
-                        <li>аостребованная</li>
-                        <li>сертифицированнием</li>
-                        <li>всего зв сутки</li>
+                        <li>быструю отправку данных</li>
+                        <li>востребованную сертификацию</li>
+                        <li>работу круглосуточно</li>
                         <li>несколько месяцев на рынке</li>
                     </ul>
                     <ul className={classes.block_list_two}>
