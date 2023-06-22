@@ -5,7 +5,6 @@ import {Link, useNavigate} from "react-router-dom"
 import {useDispatch, useSelector} from "react-redux"
 import {setIsAuth, setUser} from "../../store/slices/userSlice"
 import {getUsers} from "../../axios/usersApi"
-import logo from "../../img/Logo_group.png"
 import {getInternshipsApi, getJobsApi} from "../../axios/internshipApi"
 
 function Header() {
@@ -34,12 +33,12 @@ function Header() {
     return (
         <header className={classes.container_head}>
             <div className={classes.head_block}>
-                <div className={classes.logo_img}>
-                    <Link to={links.base}><img src={logo} alt="logo"/></Link>
-                </div>
                 <div className={classes.menu_container}>
                     <nav className={classes.menu}>
                         <ul className={classes.menu_block}>
+                            <li>
+                                <Link to={links.base}>Главная</Link>
+                            </li>
                             <li>
                                 <Link to={links.about}>О нас</Link>
                             </li>

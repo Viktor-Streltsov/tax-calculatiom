@@ -9,7 +9,7 @@
     margin: 0 auto;
     padding: 1rem 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     column-gap: 14rem;
 }
 
@@ -27,8 +27,8 @@
     display: flex;
     flex-wrap: wrap;
     column-gap: 4rem;
-    background: #181a7a;
-    padding: 0rem 2rem;
+    background: linear-gradient(90deg, #181a7a 0%, #a4a7ce 100%);
+    padding: 0 2rem;
     border-radius: 20px;
 }
 
