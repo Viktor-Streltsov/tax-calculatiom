@@ -1,0 +1,32 @@
+.container_footer {
+    max-width: 100%;
+    background: #fff;
+}
+
+.block {
+    max-width: 70rem;
+    margin: 100px auto 0;
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    column-gap: 6rem;
+    flex-wrap: wrap;
+}
+
+
+.block_connection p{
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    column-gap: 0.4rem;
+}
+
+.block_agreement p{
+    margin-bottom: 2rem;
+}
+
+.btn_bth {
+    background: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+}

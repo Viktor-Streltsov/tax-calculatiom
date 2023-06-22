@@ -1,0 +1,6 @@
+.container_content {
+    max-width: 70rem;
+    margin: 0 auto;
+    flex-grow: 1;
+    text-align: justify;
+}
